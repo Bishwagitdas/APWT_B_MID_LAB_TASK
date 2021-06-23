@@ -20,22 +20,20 @@ use App\Http\Controllers\StaffController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
-// Route::get("/admin/signup", [SignupController::class,'viewSignup']);
+
 Route::get("/signup", [SignupController::class,'viewSignup']);
-// Route::post("/admin/signup", [SignupController::class,'validation']);
-// Route::post("/signup", [SignupController::class,'validation']);
-Route::get("/admin/login", [LoginController::class,'viewLogin']);
+Route::post("/user/signup", [SignupController::class,'signup']);
 Route::get("/login", [LoginController::class,'viewLogin']);
 Route::post("/admin/login", [LoginController::class,'validation']);
-Route::post("/login", [LoginController::class,'validation']);
 Route::get("/admin/home", [AdminHomeController::class,'viewHome']);
 Route::get("/admin/home/staff", [StaffController::class,'viewStaff']);
 Route::get("/logout", [LogoutController::class,'viewLogout']);
+
 // Route::get('/check', function(){
 //     return DB::table('users')->get();
 // });

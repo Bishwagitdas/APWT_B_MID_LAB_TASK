@@ -5,7 +5,7 @@
 </head>
 <body>
 
-  <form method="post" action="/signup">
+  <form method="post" action="/user/signup">
    @csrf
     <center>
     <fieldset  style="width: 500px">

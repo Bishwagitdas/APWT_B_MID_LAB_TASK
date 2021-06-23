@@ -29,7 +29,7 @@
 					</table>
 					<hr width="100%" align="left">
 					<input type="submit" name="submit" value="Login">
-					<a href="/singup">Sign Up here</a>	
+					<a href="/signup">Sign Up here</a>	
 					</table>
 			</fieldset>
 			</center>	
